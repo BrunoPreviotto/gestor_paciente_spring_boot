@@ -8,16 +8,63 @@
 <body>
     
 
-    <div class="container mt-2" th:fragment="divDatosPrincipales">
+    <div class="container mt-2" th:fragment="divSesiones">
 
         <div class="card">
             <div class="card-header bg-dark">
-                <h1 class="text-warning font-weight-bold">CREAR PACIENTE</h1>
+                <h1 class="text-warning font-weight-bold">SESIONES</h1>
             </div>
             <div class="card-body bg-secondary text-white">
                 <form action="#" th:action="@{/views/pacientes/guardar}" th:object="${paciente}" class="container" method="post">
                     
                     <div class="form-group">
+                        
+                        
+                        <table class="table table-sm table-dark">
+                            <thead>
+                              <tr>
+                                <th scope="col">Numero Sesión</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Trabajo sesión</th>
+                                <th scope="col">Observación</th>
+                                <th scope="col">Honorario por sesión</th>
+                                <!--<th scope="col">Estado de facturación</th>-->
+                              </tr>
+                            </thead>
+                            <tbody>
+                                
+                                
+                                
+                                <tr th:each="pac:${paciente.sesiones}">
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <input type="number" th:field="*{pac.numerosesion}" class="form-control" id="numero_sesion">
+                                    </td>
+                                    <td>
+                                        <input type="date" th:field="*{pac.fecha}"  class="form-control" id="fecha_sesion">
+                                    </td>
+                                    <td>
+                                        <input type="text" th:field="*{pac.trabajosesion}" class="form-control" id="trabajo_sesion">
+                                    </td>
+                                    <td>
+                                        <input type="text" th:field="*{pac.observacion}" class="form-control" id="observacion_sesion">
+                                    </td>
+                                    <td>
+                                        <input type="text" th:field="*{pac.honorarioporsesion}" class="form-control" id="honorario_sesion">
+                                    </td>
+                                    <!--<td>
+                                        <input type="text" th:field="*{sesiones}" class="form-control" id="estado_facturacion_sesion">
+                                    </td>-->
+                                </tr>
+                              
+                            </tbody>
+                          </table>
+
+                        
+                        
+                        
+                        
+                        
                         <input type="hidden" th:field="*{id}">
                         <label for="nombre">Nombre</label>
                         <input type="text" th:field="*{nombre.nombre}" class="form-control" id="nombre">
@@ -65,7 +112,7 @@
                     </div>
 
                     
-                        <input th:if="${esTrue}" type="submit" class="btn btn-dark btn-sm" value="Guardar"></input>
+                        <input th:if="esTrue" type="submit" class="btn btn-dark btn-sm" value="Guardar"></input>
                         
                     
                 </form>
@@ -75,9 +122,7 @@
 
     </div>
 
-    <div th:fragment="divPLan1">
-        sfsadf
-    </div>
+   
     
 
 

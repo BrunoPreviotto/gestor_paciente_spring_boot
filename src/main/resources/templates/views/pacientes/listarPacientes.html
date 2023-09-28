@@ -30,6 +30,7 @@
               <th scope="col">DNI</th>
               <th scope="col">Telefono</th>
               <th scope="col">Honorarios</th>
+              <th scope="col">Ver</th>
               <th scope="col">Editar</th>
               <th scope="col">Eliminar</th>
             </tr>
@@ -42,6 +43,14 @@
               <td th:text="${pac.dni}"></td>
               <td th:text="${pac.telefono.telefono}"></td>
               <td th:text="${pac.honorarios.honorario}"></td>
+              <td>
+                <a class="btn btn-warning btn-sm" 
+                  th:href="@{/views/pacientes/ver/} + ${pac.id}" 
+                  th:text="Ver"
+                  title="Ver Registro" 
+                  >
+                </a>
+              </td>
               <td>
                 <a class="btn btn-success btn-sm" 
                   th:href="@{/views/pacientes/editar/} + ${pac.id}" 
@@ -57,6 +66,7 @@
                   onclick="return confirm('Estas seguro de eliminar el registro?')">
                 </a>
               </td>
+              
             </tr>
 
 

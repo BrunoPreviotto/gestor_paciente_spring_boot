@@ -8,11 +8,11 @@
 <body>
     
 
-    <div class="container mt-2" th:fragment="divDatosPrincipales">
+    <div class="container mt-2" th:fragment="divObraSocialPaciente">
 
         <div class="card">
             <div class="card-header bg-dark">
-                <h1 class="text-warning font-weight-bold">CREAR PACIENTE</h1>
+                <h1 class="text-warning font-weight-bold">OBRA SOCIAL PACIENTE</h1>
             </div>
             <div class="card-body bg-secondary text-white">
                 <form action="#" th:action="@{/views/pacientes/guardar}" th:object="${paciente}" class="container" method="post">
@@ -65,7 +65,7 @@
                     </div>
 
                     
-                        <input th:if="${esTrue}" type="submit" class="btn btn-dark btn-sm" value="Guardar"></input>
+                        <input th:if="esTrue" type="submit" class="btn btn-dark btn-sm" value="Guardar"></input>
                         
                     
                 </form>
@@ -75,9 +75,7 @@
 
     </div>
 
-    <div th:fragment="divPLan1">
-        sfsadf
-    </div>
+   
     
 
 

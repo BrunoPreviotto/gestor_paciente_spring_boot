@@ -94,8 +94,23 @@ public class PacienteController {
     @GetMapping("/editar/{id}")
     public String editarPaciente(@PathVariable("id") Long idPaciente, Model model){
         Paciente paciente = (Paciente)pacienteService.buscarPorId(idPaciente);
+        boolean editar = true;
+
 
         model.addAttribute("paciente", paciente);
+        model.addAttribute("esTrue", editar);
+        return "/views/pacientes/crearPaciente";
+    }
+
+    @GetMapping("/ver/{id}")
+    public String verPaciente(@PathVariable("id") Long idPaciente, Model model){
+        Paciente paciente = (Paciente)pacienteService.buscarPorId(idPaciente);
+        boolean editar = false;
+
+        
+
+        model.addAttribute("paciente", paciente);
+        model.addAttribute("esTrue", editar);
         return "/views/pacientes/crearPaciente";
     }
 
