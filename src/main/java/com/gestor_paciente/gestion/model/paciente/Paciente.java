@@ -29,11 +29,11 @@ import lombok.Builder.Default;
 
 
 
-@Data
-@Entity
-@Table(name = "pacientes")
+//@Data
+//@Entity
+//@Table(name = "pacientes")
 public class Paciente {
-    @Id
+  /*   @Id
     @Column(name = "id_paciente")
     @GeneratedValue(strategy = GenerationType.AUTO)
     
@@ -81,7 +81,7 @@ public class Paciente {
     /*private List<Telefono> listaTelefonos;
     
     
-    private Sesion sesion;*/
+    private Sesion sesion;
 
     @OneToMany(mappedBy = "paciente", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Sesion> sesiones;
@@ -94,5 +94,5 @@ public class Paciente {
         return "Soy el paciente:" + getNombre().getNombre() + getNombre().getApellido();
     }
 
-    
+    */
 }

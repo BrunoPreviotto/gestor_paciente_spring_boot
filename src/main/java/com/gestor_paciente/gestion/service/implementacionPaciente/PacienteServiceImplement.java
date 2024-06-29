@@ -6,15 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import com.gestor_paciente.gestion.model.paciente.Diagnostico;
+
 import com.gestor_paciente.gestion.model.paciente.Paciente;
 import com.gestor_paciente.gestion.repository.paciente.IPacienteRepo;
 import com.gestor_paciente.gestion.service.CRUD;
 
 @Service
-@Qualifier("paciente_service")
-public class PacienteServiceImplement implements CRUD<Paciente>{
-    @Autowired
+//@Qualifier("paciente_service")
+public class PacienteServiceImplement /*implements CRUD<Paciente>*/{
+   /*  @Autowired
     private IPacienteRepo repo;
 
    
@@ -42,6 +42,6 @@ public class PacienteServiceImplement implements CRUD<Paciente>{
     @Override
     public void eliminar(Long id) {
         repo.deleteById(id); 
-    }
+    }*/
     
 }

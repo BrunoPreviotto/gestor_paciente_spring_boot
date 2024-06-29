@@ -9,11 +9,9 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
-@Entity
-@Data
-@Table(name = "diagnosticos")
+
 public class Diagnostico {
-    
+   /* 
     @Id
     @Column(name = "id_diagnostico")
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,6 +22,6 @@ public class Diagnostico {
     private String diagnostico;
 
     @Column
-    private String observacion;
+    private String observacion;*/
     
 }

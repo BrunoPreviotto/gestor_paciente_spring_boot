@@ -14,12 +14,11 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-@Entity
-@Data
-@Table(name = "sesiones")
+
+
 public class Sesion {
 
-    @Id
+   /*  @Id
     @Column(name = "id_sesion")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
@@ -50,5 +49,5 @@ public class Sesion {
     @ManyToOne
     @JoinColumn(name = "id_paciente")
     private Paciente paciente;
-    
+    */
 }

@@ -28,10 +28,10 @@ import jakarta.validation.Valid;
 
 
 @Controller
-@RequestMapping("/views/pacientes")
+//@RequestMapping("/views/pacientes")
 public class PacienteController {
     
-    @Autowired
+    /*@Autowired
     @Qualifier("paciente_service")    
     private CRUD pacienteService;
 
@@ -49,10 +49,10 @@ public class PacienteController {
     
     
 
-    /*@RequestMapping("/p")
+    @RequestMapping("/p")
     public String pacientes(){
        return "paciente";
-    }*/
+    }
     
     @GetMapping("/")
 	public String listaPacientes(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
@@ -63,12 +63,12 @@ public class PacienteController {
         return "/views/pacientes/listarPacientes";
 	}
 
-    /*@GetMapping("/")
+    @GetMapping("/")
 	public String pacientePorId(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
        
         model.addAttribute("paciente", pacienteService.buscarPorId(41));
 		return "/views/pacientes/pacientePOrId";
-	}*/
+	}
 
     @GetMapping("/crear")
     public String crearPaciente(Model model){
@@ -118,7 +118,7 @@ public class PacienteController {
     public String eliminarPaciente(@PathVariable("id") Long idPaciente){
         pacienteService.eliminar(idPaciente);
         return "redirect:/views/pacientes/";
-    }
+    }*/
 
     
 }

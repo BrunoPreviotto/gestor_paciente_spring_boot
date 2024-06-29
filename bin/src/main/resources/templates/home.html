@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="plantilla/template :: head">
+
+</head>
+
+<body>
+   <header th:insert="plantilla/template :: header">
+
+   </header>
+
+
+   <div class="container-fluid inicio-contro-pagina-principal">
+      <div class="row m-2">
+         <div class="col m-2">
+            <img class="img-fluid" th:src="@{/img/freud.jpg}" alt="">
+         </div>
+         <div class="col m-2">
+            <h1 class="font-italic font-weight-bold text-center">CLASENDER</h1>
+            <h2 class="font-weight-bold">¡Mirá como te mira Sigmund por no estar usando nuestro software!</h1> <br>
+            <h3>Gestioná tus pacientes de manera sencilla y eficiente.</h1> <br>
+            <h3>Contacta con nosotros para obtener el producto.</h1>
+         </div>
+      </div>
+   </div>
+
+
+
+   <div class="container mt-2">
+   
+     <div class="card bg-light">
+      <div class="card-body bg-light">
+         <div class="row mt-1">
+   
+            <div class="col-12 text-center">
+               <h3 class="font-weight-bold">Pacientes</h3>
+               <img class="img-fluid border border-secondary" th:src="@{/img/pacientes.webp}" alt="">
+            </div>
+
+            <div class="col m-1">
+               <h3 class="font-weight-bold">Obra Social</h3>
+               <img class="h-75 w-100 border border-secondary" th:src="@{/img/obraSocial.webp}" alt="">
+            </div>
+            
+            <div class="col m-1">
+               <h3 class="font-weight-bold">Agenda</h3>
+               <img class="h-75 w-100 border border-secondary" th:src="@{/img/agenda.jpg}" alt="">
+            </div>
+            
+            
+         </div>
+      </div>
+
+      
+     </div>
+
+   </div>
+
+
+
+
+
+
+   <footer class="mt-2" th:insert="plantilla/template :: footer">
+
+   </footer>
+
+
+
+</body>
+
+
+
+</html>

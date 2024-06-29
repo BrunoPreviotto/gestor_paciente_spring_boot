@@ -1,0 +1,784 @@
+2024-06-28T17:34:36.376-03:00  INFO 7071 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 7071 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T17:34:36.389-03:00  INFO 7071 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T17:34:36.622-03:00  INFO 7071 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-28T17:34:36.625-03:00  INFO 7071 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-28T17:34:39.383-03:00  INFO 7071 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T17:34:39.595-03:00  INFO 7071 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 192 ms. Found 8 JPA repository interfaces.
+2024-06-28T17:34:41.111-03:00  INFO 7071 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T17:34:41.131-03:00  INFO 7071 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T17:34:41.132-03:00  INFO 7071 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T17:34:41.285-03:00  INFO 7071 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-28T17:34:41.287-03:00  INFO 7071 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4659 ms
+2024-06-28T17:34:41.655-03:00  INFO 7071 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T17:34:41.778-03:00  INFO 7071 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-06-28T17:34:41.782-03:00  INFO 7071 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-06-28T17:34:42.066-03:00  INFO 7071 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:34:42.298-03:00  INFO 7071 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T17:34:42.335-03:00  INFO 7071 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-28T17:34:42.538-03:00  INFO 7071 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@699f4040
+2024-06-28T17:34:42.547-03:00  INFO 7071 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-28T17:34:43.169-03:00  INFO 7071 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:34:45.174-03:00  INFO 7071 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T17:34:45.294-03:00  INFO 7071 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:34:45.883-03:00  INFO 7071 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-28T17:34:46.545-03:00  WARN 7071 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restAlumno': Unsatisfied dependency expressed through field 'repoCurso': Error creating bean with name 'cursoServiceImplementacion' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/service/CursoServiceImplementacion.class]: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+2024-06-28T17:34:46.546-03:00  INFO 7071 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:34:46.551-03:00  INFO 7071 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-28T17:34:46.562-03:00  INFO 7071 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-28T17:34:46.571-03:00  INFO 7071 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T17:34:46.597-03:00  INFO 7071 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-28T17:34:46.648-03:00 ERROR 7071 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restAlumno': Unsatisfied dependency expressed through field 'repoCurso': Error creating bean with name 'cursoServiceImplementacion' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/service/CursoServiceImplementacion.class]: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:714) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:694) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.gestor_paciente.gestion.GestionApplication.main(GestionApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.1.jar:3.1.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cursoServiceImplementacion' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/service/CursoServiceImplementacion.class]: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:711) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The constructor CursoMapper() is undefined
+
+	at com.gestor_paciente.gestion.service.CursoServiceImplementacion.<init>(CursoServiceImplementacion.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 38 common frames omitted
+
+2024-06-28T17:37:41.292-03:00  INFO 7488 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 7488 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T17:37:41.298-03:00  INFO 7488 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T17:37:41.381-03:00  INFO 7488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-28T17:37:41.381-03:00  INFO 7488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-28T17:37:42.613-03:00  INFO 7488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T17:37:42.757-03:00  INFO 7488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 8 JPA repository interfaces.
+2024-06-28T17:37:43.770-03:00  INFO 7488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T17:37:43.786-03:00  INFO 7488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T17:37:43.787-03:00  INFO 7488 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T17:37:43.922-03:00  INFO 7488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-28T17:37:43.923-03:00  INFO 7488 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2540 ms
+2024-06-28T17:37:44.213-03:00  INFO 7488 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T17:37:44.290-03:00  INFO 7488 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-06-28T17:37:44.294-03:00  INFO 7488 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-06-28T17:37:44.512-03:00  INFO 7488 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:37:44.693-03:00  INFO 7488 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T17:37:44.725-03:00  INFO 7488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-28T17:37:44.897-03:00  INFO 7488 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@711a017a
+2024-06-28T17:37:44.903-03:00  INFO 7488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-28T17:37:45.428-03:00  INFO 7488 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:37:46.646-03:00  INFO 7488 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T17:37:46.755-03:00  INFO 7488 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:37:47.301-03:00  INFO 7488 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-28T17:37:48.122-03:00  WARN 7488 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restAlumno': Unsatisfied dependency expressed through field 'repoCurso': Error creating bean with name 'cursoServiceImplementacion' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/service/CursoServiceImplementacion.class]: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+2024-06-28T17:37:48.123-03:00  INFO 7488 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:37:48.127-03:00  INFO 7488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-28T17:37:48.134-03:00  INFO 7488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-28T17:37:48.140-03:00  INFO 7488 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T17:37:48.162-03:00  INFO 7488 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-28T17:37:48.208-03:00 ERROR 7488 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restAlumno': Unsatisfied dependency expressed through field 'repoCurso': Error creating bean with name 'cursoServiceImplementacion' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/service/CursoServiceImplementacion.class]: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:714) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:694) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.gestor_paciente.gestion.GestionApplication.main(GestionApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.1.jar:3.1.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cursoServiceImplementacion' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/service/CursoServiceImplementacion.class]: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:711) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The constructor CursoMapper() is undefined
+
+	at com.gestor_paciente.gestion.service.CursoServiceImplementacion.<init>(CursoServiceImplementacion.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 38 common frames omitted
+
+2024-06-28T17:37:49.914-03:00  INFO 7551 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 7551 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T17:37:49.919-03:00  INFO 7551 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T17:37:50.016-03:00  INFO 7551 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-28T17:37:50.017-03:00  INFO 7551 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-28T17:37:51.362-03:00  INFO 7551 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T17:37:51.497-03:00  INFO 7551 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 8 JPA repository interfaces.
+2024-06-28T17:37:52.541-03:00  INFO 7551 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T17:37:52.557-03:00  INFO 7551 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T17:37:52.558-03:00  INFO 7551 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T17:37:52.689-03:00  INFO 7551 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-28T17:37:52.690-03:00  INFO 7551 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2672 ms
+2024-06-28T17:37:52.954-03:00  INFO 7551 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T17:37:53.041-03:00  INFO 7551 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-06-28T17:37:53.046-03:00  INFO 7551 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-06-28T17:37:53.285-03:00  INFO 7551 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:37:53.446-03:00  INFO 7551 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T17:37:53.469-03:00  INFO 7551 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-28T17:37:53.607-03:00  INFO 7551 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@711a017a
+2024-06-28T17:37:53.611-03:00  INFO 7551 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-28T17:37:54.078-03:00  INFO 7551 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:37:55.375-03:00  INFO 7551 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T17:37:55.527-03:00  INFO 7551 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:37:56.293-03:00  INFO 7551 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-28T17:37:57.001-03:00  WARN 7551 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restAlumno': Unsatisfied dependency expressed through field 'repoCurso': Error creating bean with name 'cursoServiceImplementacion' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/service/CursoServiceImplementacion.class]: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+2024-06-28T17:37:57.002-03:00  INFO 7551 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:37:57.013-03:00  INFO 7551 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-28T17:37:57.030-03:00  INFO 7551 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-28T17:37:57.037-03:00  INFO 7551 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T17:37:57.069-03:00  INFO 7551 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-28T17:37:57.112-03:00 ERROR 7551 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restAlumno': Unsatisfied dependency expressed through field 'repoCurso': Error creating bean with name 'cursoServiceImplementacion' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/service/CursoServiceImplementacion.class]: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:714) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:694) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.gestor_paciente.gestion.GestionApplication.main(GestionApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.1.jar:3.1.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cursoServiceImplementacion' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/service/CursoServiceImplementacion.class]: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:711) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The constructor CursoMapper() is undefined
+
+	at com.gestor_paciente.gestion.service.CursoServiceImplementacion.<init>(CursoServiceImplementacion.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 38 common frames omitted
+
+2024-06-28T17:38:43.889-03:00  INFO 7783 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 7783 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T17:38:43.895-03:00  INFO 7783 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T17:38:43.996-03:00  INFO 7783 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-28T17:38:43.997-03:00  INFO 7783 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-28T17:38:45.223-03:00  INFO 7783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T17:38:45.379-03:00  INFO 7783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146 ms. Found 8 JPA repository interfaces.
+2024-06-28T17:38:46.542-03:00  INFO 7783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T17:38:46.557-03:00  INFO 7783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T17:38:46.558-03:00  INFO 7783 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T17:38:46.715-03:00  INFO 7783 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-28T17:38:46.716-03:00  INFO 7783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2718 ms
+2024-06-28T17:38:47.016-03:00  INFO 7783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T17:38:47.091-03:00  INFO 7783 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-06-28T17:38:47.095-03:00  INFO 7783 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-06-28T17:38:47.340-03:00  INFO 7783 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:38:47.589-03:00  INFO 7783 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T17:38:47.615-03:00  INFO 7783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-28T17:38:47.771-03:00  INFO 7783 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@4feb2cd4
+2024-06-28T17:38:47.779-03:00  INFO 7783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-28T17:38:48.352-03:00  INFO 7783 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:38:49.718-03:00  INFO 7783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T17:38:49.862-03:00  INFO 7783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:38:50.516-03:00  INFO 7783 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-28T17:38:52.002-03:00  INFO 7783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-28T17:38:52.069-03:00  INFO 7783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9898 (http) with context path ''
+2024-06-28T17:38:52.092-03:00  INFO 7783 --- [restartedMain] c.g.gestion.GestionApplication           : Started GestionApplication in 8.773 seconds (process running for 9.719)
+2024-06-28T17:50:23.646-03:00  INFO 7783 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-06-28T17:50:23.661-03:00  INFO 7783 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T17:50:23.674-03:00  INFO 7783 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:50:23.680-03:00  INFO 7783 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-28T17:50:23.689-03:00  INFO 7783 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-28T17:50:23.813-03:00  INFO 7783 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 7783 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T17:50:23.814-03:00  INFO 7783 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T17:50:24.328-03:00  INFO 7783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T17:50:24.382-03:00  INFO 7783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 8 JPA repository interfaces.
+2024-06-28T17:50:24.700-03:00  INFO 7783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T17:50:24.701-03:00  INFO 7783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T17:50:24.702-03:00  INFO 7783 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T17:50:24.716-03:00  INFO 7783 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-28T17:50:24.717-03:00  INFO 7783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 896 ms
+2024-06-28T17:50:24.831-03:00  INFO 7783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T17:50:24.847-03:00  INFO 7783 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:50:24.849-03:00  INFO 7783 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T17:50:24.851-03:00  INFO 7783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-06-28T17:50:24.858-03:00  INFO 7783 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@4631b18c
+2024-06-28T17:50:24.859-03:00  INFO 7783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-06-28T17:50:24.999-03:00  INFO 7783 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:50:25.441-03:00  INFO 7783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T17:50:25.518-03:00  INFO 7783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:50:26.160-03:00  INFO 7783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-28T17:50:26.190-03:00  INFO 7783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9898 (http) with context path ''
+2024-06-28T17:50:26.201-03:00  INFO 7783 --- [restartedMain] c.g.gestion.GestionApplication           : Started GestionApplication in 2.442 seconds (process running for 703.828)
+2024-06-28T17:50:26.209-03:00  INFO 7783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-28T17:50:43.295-03:00  INFO 8935 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 8935 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T17:50:43.299-03:00  INFO 8935 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T17:50:43.396-03:00  INFO 8935 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-28T17:50:43.398-03:00  INFO 8935 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-28T17:50:44.896-03:00  INFO 8935 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T17:50:45.125-03:00  INFO 8935 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 204 ms. Found 8 JPA repository interfaces.
+2024-06-28T17:50:46.602-03:00  INFO 8935 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T17:50:46.618-03:00  INFO 8935 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T17:50:46.619-03:00  INFO 8935 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T17:50:46.796-03:00  INFO 8935 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-28T17:50:46.797-03:00  INFO 8935 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3397 ms
+2024-06-28T17:50:47.125-03:00  INFO 8935 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T17:50:47.262-03:00  INFO 8935 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-06-28T17:50:47.269-03:00  INFO 8935 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-06-28T17:50:47.574-03:00  INFO 8935 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:50:47.826-03:00  INFO 8935 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T17:50:47.858-03:00  INFO 8935 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-28T17:50:48.053-03:00  INFO 8935 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@22f7d7c2
+2024-06-28T17:50:48.061-03:00  INFO 8935 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-28T17:50:48.740-03:00  INFO 8935 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:50:50.587-03:00  INFO 8935 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T17:50:50.729-03:00  INFO 8935 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:50:51.491-03:00  INFO 8935 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-28T17:50:53.188-03:00  INFO 8935 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-28T17:50:53.273-03:00  INFO 8935 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9898 (http) with context path ''
+2024-06-28T17:50:53.292-03:00  INFO 8935 --- [restartedMain] c.g.gestion.GestionApplication           : Started GestionApplication in 10.555 seconds (process running for 11.595)
+2024-06-28T17:51:12.572-03:00  INFO 8935 --- [http-nio-9898-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-28T17:51:12.573-03:00  INFO 8935 --- [http-nio-9898-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-28T17:51:12.578-03:00  INFO 8935 --- [http-nio-9898-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-06-28T17:52:08.837-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 9255 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T17:52:08.850-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T17:52:08.983-03:00  INFO 9255 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-28T17:52:08.984-03:00  INFO 9255 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-28T17:52:10.372-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T17:52:10.561-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 177 ms. Found 8 JPA repository interfaces.
+2024-06-28T17:52:11.641-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T17:52:11.657-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T17:52:11.658-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T17:52:11.794-03:00  INFO 9255 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-28T17:52:11.796-03:00  INFO 9255 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2810 ms
+2024-06-28T17:52:12.200-03:00  INFO 9255 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T17:52:12.298-03:00  INFO 9255 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-06-28T17:52:12.305-03:00  INFO 9255 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-06-28T17:52:12.553-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:52:12.725-03:00  INFO 9255 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T17:52:12.747-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-28T17:52:12.909-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@22f7d7c2
+2024-06-28T17:52:12.915-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-28T17:52:13.430-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:52:14.612-03:00  INFO 9255 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T17:52:14.723-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:52:15.266-03:00  INFO 9255 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-28T17:52:16.780-03:00  INFO 9255 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-28T17:52:16.863-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9898 (http) with context path ''
+2024-06-28T17:52:16.894-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Started GestionApplication in 8.679 seconds (process running for 9.921)
+2024-06-28T17:52:51.146-03:00  INFO 9255 --- [http-nio-9898-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-28T17:52:51.147-03:00  INFO 9255 --- [http-nio-9898-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-28T17:52:51.148-03:00  INFO 9255 --- [http-nio-9898-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-28T17:56:19.177-03:00  INFO 9255 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-06-28T17:56:19.184-03:00  INFO 9255 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T17:56:19.187-03:00  INFO 9255 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-06-28T17:56:19.200-03:00  INFO 9255 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:56:19.208-03:00  INFO 9255 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-28T17:56:19.215-03:00  INFO 9255 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-28T17:56:19.359-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 9255 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T17:56:19.360-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T17:56:19.874-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T17:56:19.936-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 8 JPA repository interfaces.
+2024-06-28T17:56:20.213-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T17:56:20.216-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T17:56:20.217-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T17:56:20.237-03:00  INFO 9255 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-28T17:56:20.238-03:00  INFO 9255 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 872 ms
+2024-06-28T17:56:20.367-03:00  INFO 9255 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T17:56:20.382-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:56:20.383-03:00  INFO 9255 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T17:56:20.385-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-06-28T17:56:20.396-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@523e481b
+2024-06-28T17:56:20.398-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-06-28T17:56:20.569-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:56:21.046-03:00  INFO 9255 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T17:56:21.140-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:56:21.828-03:00  INFO 9255 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-28T17:56:21.861-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9898 (http) with context path ''
+2024-06-28T17:56:21.878-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Started GestionApplication in 2.574 seconds (process running for 254.905)
+2024-06-28T17:56:21.884-03:00  INFO 9255 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-28T17:57:45.526-03:00  INFO 9255 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-06-28T17:57:45.529-03:00  INFO 9255 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T17:57:45.538-03:00  INFO 9255 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:57:45.540-03:00  INFO 9255 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-06-28T17:57:45.542-03:00  INFO 9255 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-06-28T17:57:45.711-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 9255 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T17:57:45.718-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T17:57:46.179-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T17:57:46.222-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 8 JPA repository interfaces.
+2024-06-28T17:57:46.469-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T17:57:46.471-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T17:57:46.472-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T17:57:46.485-03:00  INFO 9255 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-28T17:57:46.486-03:00  INFO 9255 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 754 ms
+2024-06-28T17:57:46.562-03:00  INFO 9255 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T17:57:46.570-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:57:46.570-03:00  INFO 9255 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T17:57:46.572-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-06-28T17:57:46.578-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@46c2bcab
+2024-06-28T17:57:46.579-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-06-28T17:57:46.706-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:57:47.099-03:00  INFO 9255 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T17:57:47.186-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:57:47.396-03:00  WARN 9255 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restAlumno': Unsatisfied dependency expressed through field 'repoCurso': Error creating bean with name 'cursoServiceImplementacion' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/service/CursoServiceImplementacion.class]: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+2024-06-28T17:57:47.397-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:57:47.398-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-06-28T17:57:47.402-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-06-28T17:57:47.404-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T17:57:47.422-03:00  INFO 9255 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-28T17:57:47.484-03:00 ERROR 9255 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'restAlumno': Unsatisfied dependency expressed through field 'repoCurso': Error creating bean with name 'cursoServiceImplementacion' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/service/CursoServiceImplementacion.class]: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:714) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:694) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.gestor_paciente.gestion.GestionApplication.main(GestionApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.1.jar:3.1.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cursoServiceImplementacion' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/service/CursoServiceImplementacion.class]: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:711) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.gestor_paciente.gestion.service.CursoServiceImplementacion]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The constructor CursoMapper() is undefined
+
+	at com.gestor_paciente.gestion.service.CursoServiceImplementacion.<init>(CursoServiceImplementacion.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 38 common frames omitted
+
+2024-06-28T17:59:19.273-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 9255 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T17:59:19.274-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T17:59:19.667-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T17:59:19.712-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 8 JPA repository interfaces.
+2024-06-28T17:59:19.943-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T17:59:19.945-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T17:59:19.946-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T17:59:19.961-03:00  INFO 9255 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-06-28T17:59:19.962-03:00  INFO 9255 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 684 ms
+2024-06-28T17:59:20.062-03:00  INFO 9255 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T17:59:20.096-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:59:20.097-03:00  INFO 9255 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T17:59:20.099-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-06-28T17:59:20.120-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.mariadb.jdbc.Connection@2ad448c9
+2024-06-28T17:59:20.121-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-06-28T17:59:20.214-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:59:20.589-03:00  INFO 9255 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T17:59:20.674-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:59:20.694-03:00  WARN 9255 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cursoMapper' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/CursoMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.gestor_paciente.gestion.mapper.ColaboradorMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-28T17:59:20.695-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:59:20.697-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-06-28T17:59:20.709-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-06-28T17:59:20.711-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T17:59:20.720-03:00  INFO 9255 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-28T17:59:20.777-03:00 ERROR 9255 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.gestor_paciente.gestion.mapper.CursoMapper required a bean of type 'com.gestor_paciente.gestion.mapper.ColaboradorMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.gestor_paciente.gestion.mapper.ColaboradorMapper' in your configuration.
+
+2024-06-28T17:59:26.239-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 9255 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T17:59:26.239-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T17:59:26.599-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T17:59:26.646-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 8 JPA repository interfaces.
+2024-06-28T17:59:26.825-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T17:59:26.828-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T17:59:26.829-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T17:59:26.843-03:00  INFO 9255 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-06-28T17:59:26.844-03:00  INFO 9255 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 598 ms
+2024-06-28T17:59:26.928-03:00  INFO 9255 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T17:59:26.939-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:59:26.939-03:00  INFO 9255 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T17:59:26.940-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-06-28T17:59:26.948-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.mariadb.jdbc.Connection@49ec6602
+2024-06-28T17:59:26.951-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-06-28T17:59:27.053-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T17:59:27.255-03:00  INFO 9255 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T17:59:27.332-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:59:27.353-03:00  WARN 9255 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'colaboradorMapper' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/ColaboradorMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cursoMapper' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/CursoMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'colaboradorMapper': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-06-28T17:59:27.354-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T17:59:27.355-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-06-28T17:59:27.360-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-06-28T17:59:27.363-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T17:59:27.371-03:00  INFO 9255 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-28T17:59:27.389-03:00 ERROR 9255 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  colaboradorMapper defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/ColaboradorMapper.class]
+↑     ↓
+|  cursoMapper defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/CursoMapper.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-06-28T18:00:29.068-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 9255 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T18:00:29.068-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T18:00:29.408-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T18:00:29.453-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 8 JPA repository interfaces.
+2024-06-28T18:00:29.654-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T18:00:29.656-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T18:00:29.657-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T18:00:29.670-03:00  INFO 9255 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-06-28T18:00:29.671-03:00  INFO 9255 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 598 ms
+2024-06-28T18:00:29.757-03:00  INFO 9255 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T18:00:29.767-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T18:00:29.768-03:00  INFO 9255 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T18:00:29.769-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-06-28T18:00:29.774-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection org.mariadb.jdbc.Connection@3851f50e
+2024-06-28T18:00:29.775-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-06-28T18:00:29.915-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T18:00:30.185-03:00  INFO 9255 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T18:00:30.248-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T18:00:30.268-03:00  WARN 9255 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'colaboradorMapper' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/ColaboradorMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cursoMapper' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/CursoMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'colaboradorMapper': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-06-28T18:00:30.268-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T18:00:30.269-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-06-28T18:00:30.276-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-06-28T18:00:30.278-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T18:00:30.287-03:00  INFO 9255 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-28T18:00:30.299-03:00 ERROR 9255 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  colaboradorMapper defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/ColaboradorMapper.class]
+↑     ↓
+|  cursoMapper defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/CursoMapper.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-06-28T18:01:24.905-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 9255 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T18:01:24.906-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T18:01:25.241-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T18:01:25.290-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 8 JPA repository interfaces.
+2024-06-28T18:01:25.508-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T18:01:25.509-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T18:01:25.510-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T18:01:25.522-03:00  INFO 9255 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-06-28T18:01:25.522-03:00  INFO 9255 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 612 ms
+2024-06-28T18:01:25.605-03:00  INFO 9255 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T18:01:25.614-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T18:01:25.615-03:00  INFO 9255 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T18:01:25.616-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-06-28T18:01:25.626-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection org.mariadb.jdbc.Connection@78b92946
+2024-06-28T18:01:25.627-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-06-28T18:01:25.725-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T18:01:25.961-03:00  INFO 9255 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T18:01:26.029-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T18:01:26.046-03:00  WARN 9255 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'colaboradorMapper' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/ColaboradorMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cursoMapper' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/CursoMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'colaboradorMapper': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-06-28T18:01:26.047-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T18:01:26.048-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-06-28T18:01:26.052-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-06-28T18:01:26.053-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T18:01:26.061-03:00  INFO 9255 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-28T18:01:26.067-03:00 ERROR 9255 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  colaboradorMapper defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/ColaboradorMapper.class]
+↑     ↓
+|  cursoMapper defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/CursoMapper.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-06-28T18:01:34.531-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 9255 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T18:01:34.532-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T18:01:34.970-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T18:01:35.023-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+2024-06-28T18:01:35.317-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T18:01:35.318-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T18:01:35.319-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T18:01:35.334-03:00  INFO 9255 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-06-28T18:01:35.335-03:00  INFO 9255 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 798 ms
+2024-06-28T18:01:35.417-03:00  INFO 9255 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T18:01:35.423-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T18:01:35.424-03:00  INFO 9255 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T18:01:35.425-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-06-28T18:01:35.430-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection org.mariadb.jdbc.Connection@56284760
+2024-06-28T18:01:35.431-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-06-28T18:01:35.523-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T18:01:35.761-03:00  INFO 9255 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T18:01:35.836-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T18:01:35.852-03:00  WARN 9255 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'colaboradorMapper' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/ColaboradorMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cursoMapper' defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/CursoMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'colaboradorMapper': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-06-28T18:01:35.852-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T18:01:35.854-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-06-28T18:01:35.858-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2024-06-28T18:01:35.860-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T18:01:35.864-03:00  INFO 9255 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-28T18:01:35.867-03:00 ERROR 9255 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  colaboradorMapper defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/ColaboradorMapper.class]
+↑     ↓
+|  cursoMapper defined in file [/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes/com/gestor_paciente/gestion/mapper/CursoMapper.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-06-28T18:03:47.825-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 9255 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T18:03:47.826-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T18:03:48.166-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T18:03:48.213-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 8 JPA repository interfaces.
+2024-06-28T18:03:48.409-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T18:03:48.410-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T18:03:48.411-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T18:03:48.424-03:00  INFO 9255 --- [restartedMain] o.a.c.c.C.[Tomcat-6].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-06-28T18:03:48.424-03:00  INFO 9255 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 595 ms
+2024-06-28T18:03:48.499-03:00  INFO 9255 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T18:03:48.509-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T18:03:48.509-03:00  INFO 9255 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T18:03:48.510-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2024-06-28T18:03:48.519-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection org.mariadb.jdbc.Connection@158ed6eb
+2024-06-28T18:03:48.519-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2024-06-28T18:03:48.652-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T18:03:48.984-03:00  INFO 9255 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T18:03:49.071-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T18:03:49.636-03:00  INFO 9255 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-28T18:03:49.665-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9898 (http) with context path ''
+2024-06-28T18:03:49.670-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Started GestionApplication in 1.863 seconds (process running for 702.697)
+2024-06-28T18:03:49.672-03:00  INFO 9255 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-28T18:03:57.069-03:00  INFO 9255 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-06-28T18:03:57.071-03:00  INFO 9255 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-28T18:03:57.076-03:00  INFO 9255 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T18:03:57.077-03:00  INFO 9255 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-06-28T18:03:57.079-03:00  INFO 9255 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2024-06-28T18:03:57.175-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Starting GestionApplication using Java 17.0.11 with PID 9255 (/home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot/target/classes started by previotto in /home/previotto/Escritorio/Bruno/gestor_paciente_spring_boot)
+2024-06-28T18:03:57.175-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-28T18:03:57.364-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-28T18:03:57.395-03:00  INFO 9255 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 8 JPA repository interfaces.
+2024-06-28T18:03:57.555-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2024-06-28T18:03:57.556-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-28T18:03:57.557-03:00  INFO 9255 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-06-28T18:03:57.567-03:00  INFO 9255 --- [restartedMain] o.a.c.c.C.[Tomcat-6].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-06-28T18:03:57.568-03:00  INFO 9255 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 391 ms
+2024-06-28T18:03:57.632-03:00  INFO 9255 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-28T18:03:57.640-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T18:03:57.641-03:00  INFO 9255 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-28T18:03:57.642-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-06-28T18:03:57.656-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection org.mariadb.jdbc.Connection@385e3b74
+2024-06-28T18:03:57.658-03:00  INFO 9255 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-06-28T18:03:57.725-03:00  INFO 9255 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-06-28T18:03:57.975-03:00  INFO 9255 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-28T18:03:58.038-03:00  INFO 9255 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-28T18:03:58.479-03:00  INFO 9255 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-28T18:03:58.502-03:00  INFO 9255 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9898 (http) with context path ''
+2024-06-28T18:03:58.506-03:00  INFO 9255 --- [restartedMain] c.g.gestion.GestionApplication           : Started GestionApplication in 1.355 seconds (process running for 711.534)
+2024-06-28T18:03:58.510-03:00  INFO 9255 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-06-28T18:04:04.847-03:00  INFO 9255 --- [http-nio-9898-exec-1] o.a.c.c.C.[Tomcat-6].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-28T18:04:04.847-03:00  INFO 9255 --- [http-nio-9898-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-28T18:04:04.848-03:00  INFO 9255 --- [http-nio-9898-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

@@ -1,0 +1,161 @@
+
+        <div className={`container mt-5 mb-5 ${borroso}`} >
+
+            {/**CARD PADRE*/}
+
+
+            {<div className="card " >
+                {/*<h1 className="card-header">{data. + " " + data.Apellido}</h1>*/}
+
+                <div className="card-body">
+
+
+                <div className="card mb-3">
+                    <div className="row g-0">
+                        <div className="col-md-4 text-center ">
+                        <img src="/imagenes/nena.png" className="card-img  img-fluid   m-0 rounded-start" alt=""/>
+                        </div>
+                        <div className="col-md-8 ">
+                        <div className="card-body cuerpo-card clearfix">
+
+                                        {data && Object.entries(data.obtenerObjeto()).map(([c1, v1]: [string, any]) => (
+
+                                            <div className="">
+                                                {c1 !== 'Descripcion' && c1 !== 'activo' &&
+
+                                                    <div key={c1} onClick={() => setNombreEdit(new Map().set(c1, v1))}  className=" row editarLi">
+
+                                                        {typeof v1 !== 'object' ?
+
+                                                            <div className="col-8 m-2 ">
+
+                                                            <span className=" badge badge-pequeño"> {c1}</span>
+
+                                                                {c1 === 'ID' ?
+                                                                    <b className="ms-1">{v1}</b>
+                                                                    :
+                                                                    <input
+                                                                    type="text"
+                                                                    value={formData[c1]}
+                                                                    onChange={(e) => handleInputChange(c1, e.target.value)}
+                                                                    className="cajaElementos"
+                                                                    disabled={formDisable?.get(c1)} />
+                                                                }
+
+
+
+
+                                                            </div>
+                                                        :
+                                                            <div>
+                                                                {/**FAMILIARES */}
+                                                                {v1 && <div>
+                                                                    <span className=" badge badge-pequeño">{c1}</span>
+
+                                                                    <ul className="list-group">
+
+                                                                   {/* Object.entries(v1[0]).map(([c2, v2]: [string, any]) => (
+                                                                        <b>
+                                                                            {c2} : {v2}
+                                                                        </b>
+                                                                    ))*/}
+                                                                        {/* v1.map((e:any) => {
+                                                                                v1 && Object.entries(v1[0]).map(([k, c] : [any, any]) => {
+                                                                                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                                                                                        <span className="badge text-bg-primary rounded-pill">{c}</span>
+                                                                                    </li>
+                                                                                })
+
+                                                                            })
+
+                                                                        */}
+
+                                                                    </ul>
+                                                                </div>}
+                                                            </div>
+
+                                                        }
+
+                                                        <div className="btnEdit icoEdit col-2">
+                                                             {formDisable?.get(c1) ?
+                                                                c1 !== 'ID' && <MdEdit id={c1}  onClick={() => handleEdit(c1)}  className="imgEdit"></MdEdit>
+                                                                :
+                                                                c1 !== 'ID'  && <BotonActualizar id={c1}  event={handleEdit}></BotonActualizar>
+                                                             }
+                                                        </div>
+
+
+
+                                                    </div>
+
+
+                                                }
+                                            </div>
+
+
+                                        ))}
+
+
+
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                        {/** DESCRIPCION OBJETO */}
+                        <div className="col">
+                                <div className="card text-bg-danger mb-3 card-desc" >
+                                <div className="card-header"><h4>Descripción</h4></div>
+                                <div className="card-body editarLi">
+
+                                  {/*  <p className="card-text">{data.Descripcion === null ? "Sin descripcion" : data.Descripcion}</p>*/}
+                                    <MdEdit className="ms-2 icoEdit"/>
+                                </div>
+                                </div>
+                        </div>
+
+                </div>
+                <div className="card-footer clearfix">
+                        <div className="float-end">
+                            <BotonEliminar id={data ? data?.getId().toString() : '0'}  event={handleDelete}></BotonEliminar>
+                        </div>
+                </div>
+            </div>}
+
+
+
+        </div>
+
+
+        <div>
+
+            {/*ddddd*/}
+            {data && Object.entries(data.obtenerObjeto()).map(([c1, v1]: [string, any]) => (
+                <div>
+
+                    <b>{
+                        typeof v1 != 'object' ?
+                            c1
+                            :
+                            Object.entries(v1[0]).map(([c2, v2]: [string, any]) => (
+                                <b>
+                                    {
+                                        c2
+
+                                    }
+                                </b>
+                            ))
+                        }
+                    </b>
+                    <hr />
+                </div>
+
+            ))}
+        </div>
+

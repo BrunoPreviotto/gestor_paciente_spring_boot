@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="plantilla/template :: head">
+
+</head>
+
+<body>
+    
+
+    <div class="container mt-2" th:fragment="divDiagnostico">
+
+        <div class="card">
+            <div class="card-header bg-dark">
+                <h1 class="text-warning font-weight-bold">DIAGNOSTICO</h1>
+            </div>
+            <div class="card-body bg-secondary text-white">
+                <form action="ddd" th:action="@{/views/pacientes/guardar}" th:object="${paciente}" class="container" method="post">
+                    
+                    <div class="form-group">
+                        <!--<input type="hidden" th:field="*{id}">-->
+                        <label for="diagnostico">Diagnostico</label>
+                        <textarea type="text" th:field="*{diagnostico.diagnostico}" class="form-control" name=""  id="diagnostico" cols="30" rows="10"></textarea>
+                        <!--<small class="form-text text-danger" th:if="${#fields.hasErrors('nombre')}"
+                            th:errors="*{nombre.nombre}"-->
+                    </div>
+
+                   <div class="form-group">
+                        <label for="Observacion">Observacion</label>
+                        
+                        <textarea type="text" th:field="*{diagnostico.observacion}" class="form-control" name=""  id="observacion" cols="30" rows="10"></textarea>
+                        <!--<small class="form-text text-danger" th:if="${#fields.hasErrors('observacion')}"
+                            th:errors="*{diagnostico.observacion}"
+                        >
+                        </small>-->
+                    </div>
+
+                    <input th:if="${esTrue}" type="submit" class="btn btn-dark btn-sm" value="Guardar"></input>
+                
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div th:fragment="divPLan1">
+        sfsadf
+    </div>
+    
+
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+
+
+
+.barra-navegacion{
+    background-color: rgba(255, 179, 156, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo{
+    width: 100px;
+}
+
+.pie-pagina{
+    background-color: rgba(255, 179, 156, 0.5);
+}
+
+.redes-pie{
+    width: 20px;
+}
+
+.inicio-contro-pagina-principal{
+    margin-top: 10px;
+    /*background-color: rgba(192, 42, 0, 0.3);*/
+    background-color: rgba(224, 224, 224, 0.5);
+}

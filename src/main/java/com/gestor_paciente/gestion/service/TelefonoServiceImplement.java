@@ -41,5 +41,29 @@ public class TelefonoServiceImplement implements CRUD<Telefono>{
     public void eliminar(Long id) {
         repo.deleteById(id);
     }
+
+    @Override
+    public boolean existeCampo(String campo) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'existeCampo'");
+    }
+
+    @Override
+    public Long buscarIdPorDosCampos(String campo_uno, String campo_dos) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'buscarIdPorDosCampos'");
+    }
+
+    @Override
+    public Long buscarIdPorUnCampo(String campo_uno) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'buscarIdPorUnCampo'");
+    }
+
+    @Override
+    public void eliminarParcial(Long id) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'eliminarParcial'");
+    }
     
 }

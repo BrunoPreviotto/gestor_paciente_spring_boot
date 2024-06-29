@@ -16,7 +16,7 @@ import ch.qos.logback.core.model.Model;
 @Controller
 public class HomeController {
 
-    @Autowired
+    /*@Autowired
     private PacienteController  pacienteController;
     
     @GetMapping("/")
@@ -34,7 +34,7 @@ public class HomeController {
     @GetMapping("/log")
     public String log(){
         return "login";
-    }
+    }*/
 
    
     

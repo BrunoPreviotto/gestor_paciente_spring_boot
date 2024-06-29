@@ -5,7 +5,7 @@ import com.gestor_paciente.gestion.model.paciente.Sesion;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
-public interface ISesionRepo extends JpaRepository<Sesion, Long> {
+public interface ISesionRepo /*extends JpaRepository<Sesion, Long>*/ {
     
     
 }

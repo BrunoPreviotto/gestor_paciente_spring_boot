@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+
 import org.springframework.web.bind.annotation.RestController;
 
 import com.gestor_paciente.gestion.model.Nombre;
 import com.gestor_paciente.gestion.model.Telefono;
-import com.gestor_paciente.gestion.model.paciente.Honorario;
+
 import com.gestor_paciente.gestion.model.paciente.Paciente;
 import com.gestor_paciente.gestion.repository.paciente.IPacienteRepo;
 
@@ -22,7 +22,7 @@ import com.gestor_paciente.gestion.repository.paciente.IPacienteRepo;
 //@RequestMapping("RestPacientes")
 public class RestPaciente {
     
-    @Autowired
+   /*  @Autowired
     private IPacienteRepo repo;
 
     @GetMapping("/listaPacientes")
@@ -31,7 +31,7 @@ public class RestPaciente {
     }
 
     @PostMapping
-    public void insertar(@RequestBody Paciente paciente, @RequestBody Nombre nombre, @RequestBody Telefono telefono, @RequestBody Honorario honorario){
+    public void insertar(@RequestBody Paciente paciente, @RequestBody Nombre nombre, @RequestBody Telefono telefono){
         repo.save(paciente);
     }
 
@@ -46,7 +46,7 @@ public class RestPaciente {
     }
 
 
-
+    */
 
 
     

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="plantilla/template :: head">
+
+</head>
+
+<body>
+  <header th:insert="plantilla/template :: header">
+
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="font-weight-bold">PACIENTES</h1>
+      </div>
+      <div class="card-body">
+
+
+
+        </a>
+
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Edad</th>
+              <th scope="col">DNI</th>
+              <th scope="col">Telefono</th>
+              <th scope="col">Honorarios</th>
+              <th scope="col">Ver</th>
+              <th scope="col">Editar</th>
+              <th scope="col">Eliminar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr th:each="pac:${pacientes}">
+              <th scope="row" th:text="${pac.id}"></th>
+              <td th:text="${pac.nombre.nombre} + ' '  + ${pac.nombre.apellido}"></td>
+              <td th:text="${pac.edad}"></td>
+              <td th:text="${pac.dni}"></td>
+              <td th:text="${pac.telefono.telefono}"></td>
+              <td th:text="${pac.honorarios.honorario}"></td>
+              <td>
+                <a class="btn btn-warning btn-sm" 
+                  th:href="@{/views/pacientes/ver/} + ${pac.id}" 
+                  th:text="Ver"
+                  title="Ver Registro" 
+                  >
+                </a>
+              </td>
+              <td>
+                <a class="btn btn-success btn-sm" 
+                  th:href="@{/views/pacientes/editar/} + ${pac.id}" 
+                  th:text="Editar"
+                  title="Editar Registro">
+                </a>
+              </td>
+              <td>
+                <a class="btn btn-danger btn-sm" 
+                  th:href="@{/views/pacientes/eliminar/} + ${pac.id}" 
+                  th:text="Eliminar"
+                  title="Eliminar Registro" 
+                  onclick="return confirm('Estas seguro de eliminar el registro?')">
+                </a>
+              </td>
+              
+            </tr>
+
+
+          </tbody>
+
+        </table>
+        <a class="btn btn-dark btn-sm" th:href="@{crear}" th:text="'Nuevo Paciente'"></a>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  
+
+
+  <footer class="mt-2" th:insert="plantilla/template :: footer">
+
+  </footer>
+
+</body>
+
+</html>

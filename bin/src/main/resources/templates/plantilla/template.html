@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" th:href="@{/css/template.css}">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/702052ce2d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header th:fragment="header">
+
+    <nav class="navbar navbar-expand-lg navbar-dark barra-navegacion">
+      <div class="container-fluid">
+
+        <img class="logo" th:src="@{/img/icono.png}" alt="">
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+            <li class="nav-item">
+              <div class="btn-group">
+                <a class="nav-link active" aria-current="page" th:href="@{/}">
+                  <button type="button" class="btn">Inicio</button>
+                </a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <div class="btn-group">
+
+                <a th:href="@{/views/pacientes/}" class="nav-link active">
+                  <button type="button" class="btn">Pacientes</button>
+
+                </a>
+
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Datos Principales</a>
+                  <a class="dropdown-item" href="#">Sesiones</a>
+                  <a class="dropdown-item" href="#">PLan de tratamiento</a>
+                  <a class="dropdown-item" th:href="@{/views/pacientes/crear#seccionDiagnostico}">Diagnostico</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Obra Social</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <div class="btn-group">
+                <a class="nav-link active" aria-current="page" th:href="@{/views/pacientes/}">
+                  <button type="button" class="btn">Cliente</button>
+                </a>
+
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" th:href="@{/views/pacientes/}">Pacietes</a>
+                  <a class="dropdown-item" href="#">Obras sociales</a>
+                  <a class="dropdown-item" href="#">Agenda</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <div class="btn-group">
+                <a class="nav-link active" aria-current="page" th:href="@{/views/pacientes/}">
+                  <button type="button" class="btn">Empresa</button>
+                </a>
+
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" th:href="@{/views/pacientes/}">Pacietes</a>
+                  <a class="dropdown-item" href="#">Obras sociales</a>
+                  <a class="dropdown-item" href="#">Agenda</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <div class="btn-group">
+                <a class="nav-link active" aria-current="page" th:href="@{/}">
+                  <button type="button" class="btn">Contacto</button>
+                </a>
+              </div>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+
+      
+        <div class="">
+          <a class="" aria-current="page" th:href="@{/}">
+            <button type="button" class="btn"> <img class="redes-pie" th:src="@{/img/user-solid.svg}" alt=""></button>
+            
+          </a>
+        </div>
+       
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Cuerpo de pagina -->
+
+  <div th:fragment="cuerpo">
+
+  </div>
+
+
+
+
+  <script type="text/javascript" th:scr="/js/template.js"></script>
+
+  <!-- PIE DE PAGINA -->
+  <footer th:fragment="footer">
+    <div class="row p-3 pie-pagina">
+      <div class="col">
+        <dir>
+          <p>
+            Guadalupe 831 <br>
+            Rafaela, Santa Fe, Argentina <br>
+            +54-03492-411741
+          </p>
+        </dir>
+      </div>
+
+      <div class="col text-right">
+        <div>
+          <img class="redes-pie" th:src="@{/img/facebook.svg}" alt="">
+        </div>
+        <div>
+          <img class="redes-pie" th:src="@{/img/square-instagram.svg}" alt="">
+        </div>
+        <div>
+          <img class="redes-pie" th:src="@{/img/twitter.svg}" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+
+</html>
